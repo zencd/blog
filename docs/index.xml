@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Sep 2023 21:09:21 +0300</lastBuildDate><atom:link href="https://zencd.github.io/tmp1/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
+      <title>Spring Transactions Cheatsheet</title>
       <link>https://zencd.github.io/tmp1/docs/test/</link>
       <pubDate>Wed, 13 Sep 2023 21:09:21 +0300</pubDate>
       
       <guid>https://zencd.github.io/tmp1/docs/test/</guid>
-      <description>hi hi</description>
+      <description>Spring Transactions Cheatsheet Propagation behaviours: level existing tx missing tx NEVER fail - SUPPORTS reuse - REQUIRED reuse create MANDATORY reuse fail NESTED save pt + create create NOT_SUPPORTED suspend - REQUIRES_NEW suspend + create create Isolation levels: # isolation solved problem 1 READ_UNCOMMITTED - 2 READ_COMMITTED Dirty read 3 REPEATABLE_READ Nonrepeatable read + above 4 SERIALIZABLE Phantom read + above Isolation problems: Dirty read: read the uncommitted change of a concurrent transaction Nonrepeatable read: get different value on re-read of a row if a concurrent transaction updates the same row and commits Phantom read: get different rows after re-execution of a range query if another transaction adds or removes some rows in the range and commits See also https://www.</description>
     </item>
     
   </channel>
