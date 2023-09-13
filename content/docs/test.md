@@ -25,7 +25,7 @@ draft = false
 | 3   | `REPEATABLE_READ`  | Nonrepeatable read + above |
 | 4   | `SERIALIZABLE`     | Phantom read + above       |
 
-```
+```text
 | #   | isolation        | solved problem             |
 |-----|------------------|----------------------------|
 | 1   | READ_UNCOMMITTED | -                          |
