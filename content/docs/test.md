@@ -4,8 +4,6 @@ date = 2023-09-13T21:09:21+03:00
 draft = false
 +++
 
-# Spring Transactions Cheatsheet
-
 ## Propagation behaviours:
 
 | level         | existing tx      | missing tx |
