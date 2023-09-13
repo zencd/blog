@@ -6,24 +6,33 @@ draft = false
 
 ## Propagation behaviours:
 
-| level         | existing tx      | missing tx |
-|---------------|------------------|------------|
-| NEVER         | fail             | -          |
-| SUPPORTS      | reuse            | -          |
-| REQUIRED      | reuse            | create     |
-| MANDATORY     | reuse            | fail       |
-| NESTED        | save pt + create | create     |
-| NOT_SUPPORTED | suspend          | -          |
-| REQUIRES_NEW  | suspend + create | create     |
+| level           | existing tx      | missing tx |
+|-----------------|------------------|------------|
+| `NEVER`         | fail             | -          |
+| `SUPPORTS`      | reuse            | -          |
+| `REQUIRED`      | reuse            | create     |
+| `MANDATORY`     | reuse            | fail       |
+| `NESTED`        | save pt + create | create     |
+| `NOT_SUPPORTED` | suspend          | -          |
+| `REQUIRES_NEW`  | suspend + create | create     |
 
 ## Isolation levels:
 
-| #   | isolation        | solved problem             |
-|-----|------------------|----------------------------|
-| 1   | READ_UNCOMMITTED | -                          |
-| 2   | READ_COMMITTED   | Dirty read                 |
-| 3   | REPEATABLE_READ  | Nonrepeatable read + above |
-| 4   | SERIALIZABLE     | Phantom read + above       |
+| #   | isolation          | solved problem             |
+|-----|--------------------|----------------------------|
+| 1   | `READ_UNCOMMITTED` | -                          |
+| 2   | `READ_COMMITTED`   | Dirty read                 |
+| 3   | `REPEATABLE_READ`  | Nonrepeatable read + above |
+| 4   | `SERIALIZABLE`     | Phantom read + above       |
+
+```
+| #   | isolation          | solved problem             |
+|-----|--------------------|----------------------------|
+| 1   | `READ_UNCOMMITTED` | -                          |
+| 2   | `READ_COMMITTED`   | Dirty read                 |
+| 3   | `REPEATABLE_READ`  | Nonrepeatable read + above |
+| 4   | `SERIALIZABLE`     | Phantom read + above       |
+```
 
 ## Isolation problems:
 
