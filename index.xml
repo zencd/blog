@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
     <link>https://zencd.github.io/tmp1/</link>
@@ -13,7 +13,7 @@
       <pubDate>Wed, 13 Sep 2023 21:09:21 +0300</pubDate>
       
       <guid>https://zencd.github.io/tmp1/docs/test/</guid>
-      <description>Propagation behaviours: level existing tx missing tx NEVER fail - SUPPORTS reuse - REQUIRED reuse create MANDATORY reuse fail NESTED save pt + create create NOT_SUPPORTED suspend - REQUIRES_NEW suspend + create create Isolation levels: # isolation solved problem 1 READ_UNCOMMITTED - 2 READ_COMMITTED Dirty read 3 REPEATABLE_READ Nonrepeatable read + above 4 SERIALIZABLE Phantom read + above | # | isolation | solved problem | |-----|------------------|----------------------------| | 1 | READ_UNCOMMITTED | - | | 2 | READ_COMMITTED | Dirty read | | 3 | REPEATABLE_READ | Nonrepeatable read + above | | 4 | SERIALIZABLE | Phantom read + above | Isolation problems: Dirty read: read the uncommitted change of a concurrent transaction Nonrepeatable read: get different value on re-read of a row if a concurrent transaction updates the same row and commits Phantom read: get different rows after re-execution of a range query if another transaction adds or removes some rows in the range and commits See also https://www.</description>
+      <description>Propagation behaviours 🔗 Propagation TX exists TX missing NEVER fail - NOT_SUPPORTED suspend - SUPPORTS reuse - MANDATORY reuse fail REQUIRED reuse create REQUIRES_NEW suspend + create create NESTED save point + create create Isolation levels 🔗 Isolation Solved problem - READ_UNCOMMITTED - - READ_COMMITTED Dirty read - REPEATABLE_READ Nonrepeatable read +above SERIALIZABLE Phantom read +above Isolation problems 🔗 Dirty read - read the uncommitted change of a concurrent transaction Nonrepeatable read: get different value on re-read of a row if a concurrent transaction updates the same row and commits Phantom read: get different rows after re-execution of a range query if another transaction adds or removes some rows in the range and commits See also 🔗 https://www.</description>
     </item>
     
   </channel>
